@@ -13,5 +13,13 @@ $(function() {
         autoplay: true,
     });
 
-    var mixer = mixitup('.gallery__inner');
+    var mixer = mixitup('.gallery__inner', {
+        load: {
+            filter: '.bedroom'
+        }
+    });
+
+    // $('.gallery__btn').on('click', function () {
+    //     $('.gallery.addClass('active');
+    // })
 })
